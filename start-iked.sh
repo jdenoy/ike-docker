@@ -39,6 +39,7 @@ iked -F &
 IKED_PID=$!
 echo "IKEd started."
 
+echo "Mapping sites files"
 /bin/mkdir /root/.ike
 /bin/ln /sites/ /root/.ike/sites -s
 
