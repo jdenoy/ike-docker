@@ -3,7 +3,13 @@ This is a fork of Stono/ike, which has been modified to allow site files that ha
 Fork is used for personnal docker usage, the reste of the document is left untouched as redacted by it's original redactor (apart from the docker image name).
 
 ------------------
+NEWS : 
 
+2018-03-05 - Package upgrades 
+ - Upgrade from CentOS 6 to CentOS 7
+ - Upgrade from openssl-devel-1.0.1e-30.el6_6.4 to openssl-devel-1.0.2k-8.el7.x86_64
+
+------------------
 This container came about because in newer versions of openssl I'm unable to connect to peers using older 1024bit certificates.
 
 Unfortuantely those targets aren't going to update their certifcates any time soon, and at the same time I am unwilling to downgrade openssl on my machine to accomodate them!  

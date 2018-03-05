@@ -1,11 +1,11 @@
-FROM centos:6
+FROM centos:7
 MAINTAINER Johan Denoyer <johan@johandenoyer.fr>
 ENV MALLOC_CHECK_ 0
 ENV LD_LIBRARY_PATH /usr/lib
 
 RUN yum -y install openssl-devel
-RUN yum -y downgrade openssl-1.0.1e-30.el6_6.4 openssl-devel-1.0.1e-30.el6_6.4
-RUN yum -y install wget tar cmake gcc gcc-c++ libedit-devel flex bison strace
+RUN yum -y downgrade openssl-devel-1.0.2k-8.el7.x86_64
+RUN yum -y install wget tar make cmake gcc gcc-c++ libedit-devel flex bison
 
 RUN cd /tmp && \
     wget https://www.shrew.net/download/ike/ike-2.2.1-release.tgz && \
